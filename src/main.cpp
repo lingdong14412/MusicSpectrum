@@ -204,10 +204,10 @@ void extractFrequencyBands() {
   barTargets[5] = vReal[19] * 0.2f + vReal[20] * 0.3f + vReal[21] * 0.3f + vReal[22] * 0.4f;
   
   // 频段7: 3200-5000Hz
-  barTargets[6] = vReal[23] * 0.1f + vReal[24] * 0.3f + vReal[25] * 0.1f + vReal[26] * 0.2f;
+  barTargets[6] = vReal[23] * 0.1f + vReal[24] * 0.4f + vReal[25] * 0.3f + vReal[26] * 0.2f;
   
   // 频段8: 5000-8000Hz (提高权重，通常音乐高频能量较低)
-  barTargets[7] = vReal[27] * 0.1f + vReal[28] * 0.2f + vReal[29] * 0.1f + vReal[30] * 0.2f;
+  barTargets[7] = vReal[27] * 0.2f + vReal[28] * 0.2f + vReal[29] * 0.3f + vReal[30] * 0.2f;
   barTargets[7] *= 1.005f;  // 提高高频增益
   
   // 改进的动态归一化 - 分别处理低频和高频
